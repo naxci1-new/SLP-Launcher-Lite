@@ -1,7 +1,7 @@
 # SLP Launcher Lite
 
-[![Download SLP Launcher Lite](https://img.shields.io/badge/%E2%AC%87_Download-SLP_Lite.exe-2fa06b?style=for-the-badge)](https://github.com/naxci1/SLP-Launcher-Lite/releases/latest)
-[![Release](https://img.shields.io/badge/release-v1.7.4-4488d4?style=for-the-badge)](https://github.com/naxci1/SLP-Launcher-Lite/releases/tag/v1.7.0)
+[![Download SLP Launcher Lite](https://img.shields.io/badge/%E2%AC%87_Download-SLP_Lite.exe-2fa06b?style=for-the-badge)](https://github.com/naxci1-new/SLP-Launcher-Lite/releases/latest)
+[![Release](https://img.shields.io/badge/release-v1.8.1-4488d4?style=for-the-badge)](https://github.com/naxci1-new/SLP-Launcher-Lite/releases/tag/v1.8.1)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-23252b?style=for-the-badge)](#requirements)
 
 **A compact, 3D-styled companion launcher & live monitor for Topaz Video AI's SLP (Starlight Precision) model — Windows, installed app with built-in auto-update.**
@@ -9,7 +9,6 @@
 > ### 🌟 Launch → Monitor → Done
 > Simple, clean UI with a 3D design and zero-configuration defaults:
 > press **Launch**, watch the live render monitor, collect finished files from the history.
-> Looking for **AutoTune / benchmarking**? Use [Topaz-SLP-Launcher by skv89](https://github.com/skv89/Topaz-SLP-Launcher).
 
 ---
 
@@ -72,9 +71,9 @@ All of this in a compact app with a dark 3D-styled interface — a standard Wind
 
 ## Download & install
 
-[![Download SLP Launcher Lite](https://img.shields.io/badge/%E2%AC%87_Download-SLP_Lite.exe-2fa06b?style=for-the-badge)](https://github.com/naxci1/SLP-Launcher-Lite/releases/latest)
+[![Download SLP Launcher Lite](https://img.shields.io/badge/%E2%AC%87_Download-SLP_Lite.exe-2fa06b?style=for-the-badge)](https://github.com/naxci1-new/SLP-Launcher-Lite/releases/latest)
 
-1. Download the latest installer from the [**Releases**](https://github.com/naxci1/SLP-Launcher-Lite/releases) page — direct link: **[SLP_Lite_Setup_v1.7.4.exe](https://github.com/naxci1/SLP-Launcher-Lite/releases/download/v1.7.0/SLP_Lite_Setup_v1.7.4.exe)**.
+1. Download the latest installer from the [**Releases**](https://github.com/naxci1-new/SLP-Launcher-Lite/releases) page — direct link: **[SLP_Lite_Setup_v1.8.1.exe](https://github.com/naxci1-new/SLP-Launcher-Lite/releases/download/v1.8.1/SLP_Lite_Setup_v1.8.1.exe)**.
 2. Run it — a standard wizard installs the app to Program Files and creates desktop & Start Menu shortcuts.
 3. Done. Future updates arrive **in-app**: the header button turns red **Update!** when a new release is published — one click installs it silently, no manual re-download.
 
@@ -94,7 +93,7 @@ Your settings, profiles and history live in a `SLP_Lite_Data\` folder next to th
 
 ## The UI tour
 
-![SLP Launcher Lite v1.7.0 — main window](app_screenshot_v170.png)
+![SLP Launcher Lite v1.8.1 — main window](app_screenshot_v176.png)
 
 *Left:* settings (pipeline parameters, VAE tiling, Topaz path & launch). *Right of settings:* profiles, log selector and the cuDNN panel. *Right edge:* system monitor. *Below:* live render status with dual 3D progress rings and the chunk table, then the render history.
 
@@ -190,6 +189,23 @@ the most recent chunk-boundary state of your render.
 > the data and updates itself, giving you correct live statistics. And with
 > **Autobackup**, you can activate it whenever you want to automatically back
 > up the ongoing export process after every finished chunk.
+
+## Image Restore — photo upscale & restore
+
+![SLP Image Restore — split comparison](app_screenshot_image_restore.png)
+
+A new standalone tool bundled with SLP Lite: **SLP Image Restore**.
+The same SLP-26 engine that restores your videos now restores **photos**.
+
+- Open it from the **Image Restore** button in the footer (next to Recovery)
+- Drag & drop a photo or click **Load image** — PNG, JPG, WebP, BMP, TIFF, GIF, AVIF, HEIC, EXR, DDS, TGA and more
+- Upscale **1x / 2x / 3x / 4x** — very large outputs are automatically split into overlapping tiles and blended back seamlessly
+- **Split View** with a draggable green divider (ORIGINAL | SLP RESTORED) — stays stable at any zoom level
+- Zoom with the mouse wheel, pan by dragging
+- Output formats: PNG, JPG, WebP, BMP, TIFF, **DPX**, AVIF, EXR, PAM, PPM
+- **Bit depth**: 8-bit or 16-bit (TIFF/PNG/DPX in 16-bit precision)
+- Each output format shows a short description (lossless/lossy, best use)
+- Works without opening the Topaz GUI — the license is read from the installed Topaz data
 
 ## Recovery Topaz SLP
 
@@ -325,11 +341,11 @@ No — Windows only for now.
 
 ## Feedback & issues
 
-[![Open Issues](https://img.shields.io/badge/Issues-report_&_request-4488d4?style=flat-square)](https://github.com/naxci1/SLP-Launcher-Lite/issues)
+[![Open Issues](https://img.shields.io/badge/Issues-report_&_request-4488d4?style=flat-square)](https://github.com/naxci1-new/SLP-Launcher-Lite/issues)
 
 If you find a bug, or have an idea, feature request or any feedback, please open an issue — it is the fastest way to reach the developer:
 
-👉 **[github.com/naxci1/SLP-Launcher-Lite/issues](https://github.com/naxci1/SLP-Launcher-Lite/issues)**
+👉 **[github.com/naxci1-new/SLP-Launcher-Lite/issues](https://github.com/naxci1-new/SLP-Launcher-Lite/issues)**
 
 When reporting a problem, please include:
 
@@ -338,4 +354,3 @@ When reporting a problem, please include:
 - What you expected vs. what happened
 - For render issues: press **Send logs** in any error dialog — the launcher e-mails a complete diagnostic package (active log, processes, system & GPU info, Windows event-log entries, settings) automatically.
 - For render issues: the `.tzlog` file (in the app: **Log → Browse** to open it, then attach it to the issue)
-
