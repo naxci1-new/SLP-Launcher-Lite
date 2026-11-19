@@ -192,7 +192,7 @@ the most recent chunk-boundary state of your render.
 
 ## Image Restore — photo upscale & restore
 
-![SLP Image Restore — split comparison](app_screenshot_image_restore.png)
+![SLP Image Restore — split comparison](app_screenshot_image_restore_demo.png)
 
 A new standalone tool bundled with SLP Lite: **SLP Image Restore**.
 The same SLP-26 engine that restores your videos now restores **photos**.
